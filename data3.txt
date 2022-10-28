@@ -1,0 +1,29 @@
+Trinity Fillmore
+I
+12
+Zeeshaan Choudhry
+I
+15
+Syed Imaaduddin
+O
+11
+Faris Khan
+I
+16
+Mirza Baig
+O
+14
+Munkhjin Galdandorj
+O
+16
+Miguel Sarmiento
+I
+18
+Karen Trujillo
+O
+12
+Joseph Knapp
+I
+Michael Radcliffe
+O
+10
