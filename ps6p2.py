@@ -2,7 +2,7 @@
 First=0
 Second=1
 
-for nx in range(1,21):
+for nx in range(1,20):
   if nx<=1:
       next=nx
   else:
