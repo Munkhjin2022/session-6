@@ -1,0 +1,12 @@
+Coilover
+100
+2500
+Engine block
+50
+2000
+Clutch disk
+30
+1500
+Gearbox
+20
+1500
