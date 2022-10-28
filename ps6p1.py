@@ -10,12 +10,11 @@ while response =="Yes":
     for count in range(1, 6, 1):
         inta = p * i
         ebal = p + inta
-        print("Year", "Beg Bal", "End Bal")
-        print(count, "", p, "   ", ebal)
-
         itotal = itotal + inta
         p = ebal
+        
+        print("Year", "Beg Bal", "End Bal")
+        print(count, "", p, "   ", ebal) 
+        print("Total interest earned: ", itotal)
 
 response = input("Do you want to calculate again?(Yes or No)")
-
-print("Total interest earned: ", itotal)
