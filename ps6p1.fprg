@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-17 02:54:20 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFONVRHQ1I7MjAyMS0xMC0yODswNDo1Njo0NCBQTTszMzc0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFONVRHQ1I7MjAyMS0xMC0yODswNToxNzowMCBQTTsxOzM0NzI="/>
+        <attribute name="edited" value="QnVua2VyO0RFU0tUT1AtUzY1TkkySTsyMDIxLTEyLTE3OzAyOjU0OjIwIFBNOzE7MzA0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="inta" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="ebal" type="Real" array="False" size=""/>
+            <declare name="itotal" type="Real" array="False" size=""/>
+            <assign variable="itotal" expression="0"/>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <output expression="&quot;Do you want to calculate interest? (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response==&quot;Yes&quot;">
+                <output expression="&quot;Enter interest rate&quot;" newline="True"/>
+                <input variable="rate"/>
+                <output expression="&quot;Enter amount to invest&quot;" newline="True"/>
+                <input variable="p"/>
+                <output expression="&quot;Year&quot;  &amp; &quot;Beg bal&quot;  &amp; &quot;End bal&quot;" newline="True"/>
+                <for variable="year" start="1" end="5" direction="inc" step="1">
+                    <assign variable="inta" expression="p*rate"/>
+                    <assign variable="ebal" expression="p+inta"/>
+                    <output expression="year&amp; &quot;   &quot; &amp; p &amp; &quot;    &quot; &amp; ebal &amp; &quot;    &quot;" newline="True"/>
+                    <assign variable="itotal" expression="itotal+inta"/>
+                    <assign variable="p" expression="ebal"/>
+                </for>
+                <output expression="&quot;Total interest earned &quot; &amp; itotal" newline="True"/>
+                <output expression="&quot;Do you want to continue? Yes or No&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

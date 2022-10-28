@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-17 02:57:34 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFONVRHQ1I7MjAyMS0xMC0yODswNjoxMzoyMCBQTTszMzYz"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFONVRHQ1I7MjAyMS0xMC0yODswNjoyMTo0MyBQTTsxOzM0NzU="/>
+        <attribute name="edited" value="QnVua2VyO0RFU0tUT1AtUzY1TkkySTsyMDIxLTEyLTE3OzAyOjU3OjM0IFBNOzE7MzA1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="first" type="Integer" array="False" size=""/>
+            <assign variable="first" expression="0"/>
+            <declare name="second" type="Integer" array="False" size=""/>
+            <assign variable="second" expression="1"/>
+            <declare name="next" type="Integer" array="False" size=""/>
+            <declare name="nx" type="Integer" array="False" size=""/>
+            <for variable="nx" start="1" end="20" direction="inc" step="1">
+                <if expression="1&gt;=nx">
+                    <then>
+                        <assign variable="next" expression="nx"/>
+                    </then>
+                    <else>
+                        <assign variable="next" expression="first+second"/>
+                        <assign variable="first" expression="second"/>
+                        <assign variable="second" expression="next"/>
+                    </else>
+                </if>
+                <output expression="next" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
